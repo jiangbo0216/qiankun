@@ -2,7 +2,18 @@
  * @author Kuitos
  * @since 2019-05-15
  */
+// cp snakeCase
+/*
+_.snakeCase('Foo Bar');
+// => 'foo_bar'
 
+_.snakeCase('fooBar');
+// => 'foo_bar'
+
+_.snakeCase('--FOO-BAR--');
+// => 'foo_bar'
+
+*/
 import { isFunction, snakeCase } from 'lodash';
 import type { FrameworkConfiguration } from './interfaces';
 

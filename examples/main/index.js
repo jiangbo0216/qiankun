@@ -1,4 +1,5 @@
 import 'zone.js'; // for angular subapp
+// cp main methods
 import { registerMicroApps, runAfterFirstMounted, setDefaultMountApp, start, initGlobalState } from '../../es';
 import './index.less';
 
@@ -9,6 +10,7 @@ import './index.less';
 import render from './render/ReactRender';
 // import render from './render/VueRender';
 
+// cp main app
 /**
  * Step1 初始化应用（可选）
  */
@@ -19,7 +21,7 @@ const loader = loading => render({ loading });
 /**
  * Step2 注册子应用
  */
-
+// cp register
 registerMicroApps(
   [
     {
@@ -83,7 +85,7 @@ registerMicroApps(
     ],
   },
 );
-
+// cp global state
 const { onGlobalStateChange, setGlobalState } = initGlobalState({
   user: 'qiankun',
 });
